@@ -143,24 +143,6 @@ void quicksort(int* arr, int &l, int &r){
 }
 ```
 
-### Разбиение Ломуто(pivot - последний элемент в просматириваемой части)
-
-```c++
-
-int partition(int a[n], int l, int r) {
-    int pivot = a[r];
-    int i = l - 1;
-    for (int j = 1; j < r; j++) {
-        if (a[j] <= pivot) {
-            i++;
-            swap(a[i], a[j]);
-        }
-    }
-    swap(a[i + 1], a[r])
-    return ++i;
-}
-
-```
 
 ### Асимптотика по времени:
 
